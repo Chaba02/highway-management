@@ -1,12 +1,54 @@
-# Highway System Management
-This code provides a system of management of a highway  
-> add a station  
-> remove a station  
-> add a car  
-> remove a car  
-> plan fastest trip (both directions)
+# Highway Management System
 
-To provide the map of the highway I used an array with a linked list to create a sort of a hashmap in order to access to elements in ~ O(1).  
-The functions that plan the fastest trip are designed to pick, among all the fastest trip, the one with the stations closer to 0, here is an example:  
-Between 10 -> 20 -> 40 -> 60 and 10 -> 30 -> 50 -> 60 , the program will pick the first one. Same with the backwards path.
-All the functions are designed to perform well for large data set in order to provide an optimal level of time execution.
+This is my academic project for my Data Structures & Algorithms course.  
+It is designed to have optimal time and space complexity.
+Final grade: 30/30
+
+## How it works
+Suppose to be in a highway which can be run both ways. At some point there are stations which have parking lots with a maximum of 512 cars.   
+The goal is to provide the best route for a person in order to go from a station to another one in the minimum number of possible stops.  
+Each car has an autonomy and in case two paths has the exact same number of stops the software choose the nearest stop to the referring point, which is 0.
+
+These are the commands: 
+- Add car
+- Add station
+- Demolish car
+- Demolish station
+- Plan best route
+
+### Plan best route
+
+Suppose have the following highway: 0 - 5 - 20 - 40 - 50
+Each number represents the station (0km, 2km, 4km and so on..)
+
+Format: (Station #: car_autonomy)  
+Station 0: 50km  
+Station 5: 20km  
+Station 20: 10km  
+Station 40: 20km  
+Station 50: 0km  
+```
+Input: 5 -> 40
+Output: 5 20 40
+```
+
+And the same procedure is followed for the backwards
+
+```
+Input: 40 -> 0
+Output: No route available
+```
+
+
+## Built With
+
+* C - The programming language used
+* Valgrind - Used to debug and memory leak
+* CLion - IDE
+
+
+## Authors
+
+* **Omar Chaabani** - [Chaba02](https://github.com/Chaba02)
+
+
