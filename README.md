@@ -18,7 +18,7 @@ These are the commands:
 
 ### Plan best route
 
-Suppose have the following highway: 0 - 5 - 20 - 40 - 50
+Suppose have the following highway: 0 - 5 - 20 - 40 - 50  
 Each number represents the station (0km, 2km, 4km and so on..)
 
 Format: (Station #: car_autonomy)  
