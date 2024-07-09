@@ -1,7 +1,7 @@
 # Highway Management System
 
 This is my academic project for my Data Structures & Algorithms course.  
-It is designed to have optimal time and space complexity.
+It is designed to have optimal time and space complexity.  
 Final grade: 30/30
 
 ## How it works
